@@ -1,8 +1,10 @@
-import SearchFlights from "@/components/SearchFlights";
+import SearchFlights from '@/components/SearchFlights';
+import Navbar from '@/components/Navbar';
 
 function App() {
   return (
     <>
+      <Navbar />
       <SearchFlights />
     </>
   );
