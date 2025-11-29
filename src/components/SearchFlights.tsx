@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import FlightResultCard from '@/components/FlightSearchResults';
 
 export default function SearchFlights() {
   const [activeTab, setActiveTab] = useState<'route' | 'flightNumber'>('route');
@@ -112,6 +113,18 @@ export default function SearchFlights() {
             <span>Search Flights</span>
           </button>
         </div>
+        <FlightResultCard
+          airline="United Airlines"
+          airlineCode="UA"
+          flightNumber="452"
+          departTime="08:30 AM"
+          arriveTime="04:45 PM"
+          origin="FDF"
+          destination="FDF"
+          duration="5h 15m"
+          nonstop
+          price={285}
+        />
       </div>
     </div>
   );
